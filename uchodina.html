@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Zapsat hodinu</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(192,224,239), rgb(233,240,236));
+            height: 100%;
+            min-height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="zdroje" onclick="openZdroje()">
+        <img src="images/zdroje.png" alt="">
+    </div>
+    <div class="zapsatHodinu">
+        <input type="text" class="ZHT" placeholder="Téma">
+        <div class="ZHButton" onclick="zapsatHodinu()">
+            <p>Zapsat hodinu</p>
+        </div>
+    </div>
+</body>
+</html>

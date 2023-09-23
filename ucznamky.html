@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Zapsat známku</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(192,224,239), rgb(233,240,236));
+            height: 100%;
+            min-height: 1000px;
+        }
+    </style>
+</head>
+<body onload="loadZnamkyList()">
+    <div class="zdroje" onclick="openZdroje()">
+        <img src="images/zdroje.png" alt="">
+    </div>
+    <div class="zapsatZnamku">
+        <input type="text" class="ZZT" placeholder="Téma">
+        <select class="ZZV">
+            <option value="0.1" selected>váha 0.1</option>
+            <option value="0.2">váha 0.2</option>
+            <option value="0.3">váha 0.3</option>
+            <option value="0.4">váha 0.4</option>
+            <option value="0.5">váha 0.5</option>
+            <option value="0.6">váha 0.6</option>
+            <option value="0.7">váha 0.7</option>
+            <option value="0.8">váha 0.8</option>
+            <option value="0.9">váha 0.9</option>
+            <option value="1">váha 1</option>
+        </select>
+        <div class="ZZTable">
+            <div>
+                <div>
+                    Tomáš Urban
+                </div>
+                <div>
+                    <select class="ZZZ">
+                        <option value="0" selected>Nezadána</option>
+                        <option value="1">1</option>
+                        <option value="1.5">1-</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2-</option>
+                        <option value="3">3</option>
+                        <option value="3.5">3-</option>
+                        <option value="4">4</option>
+                        <option value="4.5">4-</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="ZZButton" onclick="zapsatZnamky()">
+            <p>Zapsat známky</p>
+        </div>
+    </div>
+</body>
+</html>

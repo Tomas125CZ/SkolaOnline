@@ -1,0 +1,10 @@
+PANEL:
+jméno: admin
+heslo: uaw74uvtaad74
+
+přidání předem připravených tříd a studentů:
+createStartStudents() do konzole
+createStartHours() do konzole
+
+vrácení stránky do původního stavu:
+clearAllFiles() do konzole

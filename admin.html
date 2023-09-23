@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Panel</title>
+</head>
+<body onload="loadList()">
+    <div class="zdroje" onclick="openZdroje()">
+        <img src="images/zdroje.png" alt="">
+    </div>
+    <div class="list">
+        <div class="namesL">
+            <div class="LTop">Jméno</div>
+        </div>
+        <div class="prijmeniL">
+            <div class="LTop">Příjmení</div>
+        </div>
+        <div class="idsL">
+            <div class="LTop">ID</div>
+        </div>
+        <div class="registeredL">
+            <div class="LTop">Registrace</div>
+        </div>
+        <div class="tridaL">
+            <div class="LTop">Třída</div>
+        </div>
+        <div class="studentL">
+            <div class="LTop">Učitel/Student</div>
+        </div>
+        <div class="resetL">
+            <div class="LTop">Restartovat</div>
+        </div>
+        <div class="removeL">
+            <div class="LTop">Odstranit</div>
+        </div>
+    </div>
+    <div class="createAcc">
+        <input type="text" class="nameCA" placeholder="Jméno">
+        <input type="text" class="prijmeniCA" placeholder="Příjmení">
+        <input type="date" class="dateCA">
+    </div>
+    <div class="submitAcc" onclick="createAcc()">
+        <p>Založit</p>
+    </div>
+    <div class="tridyList">
+        <div class="TL">
+            <div class="LTop">Třída</div>
+        </div>
+        <div class="PZL">
+            <div class="LTop">Počet Žáků</div>
+        </div>
+        <div class="UL">
+            <div class="LTop">Třídní učitel</div>
+        </div>
+        <div class="PL">
+            <div class="LTop">Předměty</div>
+        </div>
+        <div class="RL">
+            <div class="LTop">Odstranit</div>
+        </div>
+    </div>
+    <div class=""></div>
+    <div class="createTrida">
+        <input type="text" class="tridaCT" placeholder="Třída">
+        <div class="submitTrida" onclick="createTrida()"><p>Založit</p></div>
+    </div>
+    <div class="hodinyList">
+        <div class="HHL">
+            <div class="LTop">Hodina</div>
+            <div>TEST</div>
+            <div>TEST</div>
+        </div>
+        <div class="CHL">
+            <div class="LTop">Čas</div>
+            <div>TEST</div>
+            <div>TEST</div>
+        </div>
+        <div class="THL">
+            <div class="LTop">Třída</div>
+            <div>TEST</div>
+            <div>TEST</div>
+        </div>
+        <div class="UHL">
+            <div class="LTop">Učitel</div>
+            <div>TEST</div>
+            <div>TEST</div>
+        </div>
+        <div class="RHL">
+            <div class="LTop">Odstranit</div>
+            <div>TEST</div>
+            <div>TEST</div>
+        </div>
+    </div>
+    <div class="createHodina">
+        <input type="text" class="hodinaCH" placeholder="Hodina">
+        <input type="text" class="tridaCH" placeholder="Třída">
+        <input type="text" class="ucitelCH" placeholder="Učitel">
+        <input type="text" class="ucebnaCH" placeholder="Učebna">
+        <select class="denCH">
+            <option value="Po" selected>Pondělí</option>
+            <option value="Ut">Úterý</option>
+            <option value="St">Středa</option>
+            <option value="Ct">Čtvrtek</option>
+            <option value="Pa">Pátek</option>
+        </select>
+        <select class="casCH">
+            <option value="0" selected>0. hodina</option>
+            <option value="1">1. hodina</option>
+            <option value="2">2. hodina</option>
+            <option value="3">3. hodina</option>
+            <option value="4">4. hodina</option>
+            <option value="5">5. hodina</option>
+            <option value="6">6. hodina</option>
+            <option value="7">7. hodina</option>
+            <option value="8">8. hodina</option>
+            <option value="9">9. hodina</option>
+            <option value="10">10. hodina</option>
+            <option value="11">11. hodina</option>
+            <option value="12">12. hodina</option>
+        </select>
+    </div>
+    <div class="submitHour" onclick="createHour()">
+        <p>Založit</p>
+    </div>
+</body>
+</html>

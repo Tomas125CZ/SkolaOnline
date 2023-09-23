@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(192,224,239), rgb(233,240,236));
+    min-height: 950px;
+    /*background: linear-gradient(to right,rgb(247,230,236), rgb(222,240,243), rgb(247,230,236));*/
+}
+
+.login .username {
+    margin-top: 40px;
+}
+
+.id {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.username, .password, .id {
+    width: 225px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login {
+    background-color: rgb(252,253,253);
+    width: 325px;
+    height: 250px;
+    margin-left: calc((100% - 325px)/2);
+    margin-top: calc((100% - 250px)/5);
+    text-align: center;
+}
+
+.register {
+    background-color: rgb(252,253,253);
+    width: 325px;
+    height: 300px;  
+    text-align: center;
+    margin-left: calc((100% - 325px)/2);
+    margin-top: calc((100% - 250px)/5.25);
+}
+
+.loginTitle {
+    font-size: x-large;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.flex .password {
+    width: 200px;
+}
+
+.password {
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    margin-left: calc(100% - 353px);
+}
+
+.loginButton {
+    width: 225px;
+    height: 40px;
+    margin: auto;
+    background: linear-gradient(to top, rgb(87,186,12), rgb(111,228,22));
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: rgb(252,253,253);
+    border-radius: 5px;
+}
+
+.noAcc span:hover {
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, rgb(57,156,42), rgb(81, 198, 52));
+}
+
+.noAcc {
+    margin-top: 5px;
+    font-size: large;
+}
+
+
+.loginButton div {
+    text-align: center;
+    transform: translate(0%, 65%);
+}
+
+.list {
+    display: flex;
+    width: 80%;
+    min-width: 1000px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.namesL, .prijmeniL, .idsL, .registeredL, .removeL, .tridaL, .resetL, .studentL {
+    width: calc(100%/8);
+    text-align: center;
+}
+
+.LTop {
+    font-weight: bolder;
+}
+
+.namesL div:nth-child(1), .prijmeniL div:nth-child(1), .idsL div:nth-child(1), .registeredL div:nth-child(1), .tridaL div:nth-child(1), .resetL div:nth-child(1), .removeL div:nth-child(1), .studentL div:nth-child(1) {
+    border-top: 1px solid black;
+} 
+
+.namesL div, .prijmeniL div, .idsL div, .registeredL div, .tridaL div, .resetL div, .removeL div, .studentL div {
+    border-bottom: 1px solid black;
+}
+.namesL, .prijmeniL, .idsL, .registeredL, .tridaL, .resetL, .removeL, .studentL {
+    border-left: 1px solid black;
+}
+
+.removeL div {
+    border-right: 1px solid black;
+}
+
+.nameCA {
+    margin-top: 30px;
+}
+
+.prijmeniCA, .dateCA {
+    margin-left: 5px;
+}
+
+.nameCA, .prijmeniCA, .dateCA {
+    width: calc(100%/3 - 6.5px);
+}
+
+.submitAcc {
+    min-width: 1000px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    background: linear-gradient(to top, rgb(87,186,12), rgb(111,228,22));
+}
+
+.submitAcc:hover {
+    background: linear-gradient(to top, rgb(57,156,42), rgb(81, 198, 52));
+}
+
+.submitAcc p {
+    padding: 8px 0;
+}
+
+.submitAcc:hover {
+    cursor: pointer;
+}
+
+.tridyList {
+    display: flex;
+    width: 80%;
+    min-width: 1000px;
+    margin-left: 10%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.TL, .PZL, .RL, .UL {
+    width: 15%;
+}
+
+.PL {
+    width: 40%;
+}
+
+.TL {
+    border-left: 1px solid black;
+}
+
+.TL div, .PZL div, .PL div, .RL div, .UL div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.TL div:nth-child(1), .PZL div:nth-child(1), .PL div:nth-child(1), .RL div:nth-child(1), .UL div:nth-child(1) {
+    border-top: 1px solid black;
+}
+
+.createAcc {
+    min-width: 1000px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.createTrida {
+    margin-top: 20px;
+    width: 80%;
+    min-width: 1000px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.tridaCT, .submitTrida {
+    width: calc(50%);
+}
+
+.submitTrida {
+    margin-left: 10px;
+}
+
+.submitTrida {
+    text-align: center;
+    background: linear-gradient(to top, rgb(87,186,12), rgb(111,228,22));
+}
+
+.submitTrida:hover {
+    background: linear-gradient(to top, rgb(57,156,42), rgb(81, 198, 52));
+    cursor: pointer;
+}
+
+.submitTrida p {
+    padding: 10px 0;
+}
+
+.tridaL div:nth-child(1):hover, .studentL div:nth-child(1):hover, .resetL div:nth-child(1):hover, .removeL div:nth-child(1):hover, .RL div:nth-child(1):hover {
+    cursor: default;
+}
+
+.tridaL:hover, .studentL:hover, .resetL:hover, .removeL:hover, .RL:hover {
+    cursor: pointer;
+}
+
+.kTop {
+    padding-top: 15px;
+    display: flex;
+    border-bottom: 1px solid rgb(232, 240, 242);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.kTop img {
+    width: 50px;
+}
+
+.kalendar {
+    margin-top: 100px;
+    width: 95%;
+    min-width: 1500px;
+    margin-left: 2.5%;
+    background-color: rgb(252,253,253);
+    box-shadow: 0 0 10px rgb(232, 240, 242);
+    border-radius: 5px;
+}
+
+.kTop p {
+    color: rgb(76, 84, 119);
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.kInfo {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.kInfo div {
+    margin-left: 50px;
+}
+
+.kInfo div:nth-child(1) {
+    margin-left: 0;
+}
+
+.top {
+    border-radius: 5px;
+    background-color: rgb(130,149,156);
+    color: rgb(171,182,185);
+    text-align: center;
+    margin-left: 5px;
+    padding: 3px 10px;
+}
+
+.left {
+    border-radius: 5px;
+    background-color: rgb(130,149,156);
+    color: rgb(171,182,185);
+    padding: 10px 6px;
+    min-height: 75px;
+    width: 50px;
+    height: calc(100% - 40px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left p {
+    color: rgb(240,242,243);
+}
+
+.empty {
+    width: 50px;
+    height: 42px;
+}
+
+.dHour {
+    text-align: center;
+    margin-top: 5px;
+    background-color: rgb(253,225,209);
+    padding: 5px;
+    width: calc((100% / 13) - (205px/12));
+    height: 100%;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.top p {
+    color: rgb(240,242,243);
+}
+.hours, .days {
+    display: flex;
+}
+
+.rozvrh {
+    width: fit-content;
+    max-width: 90%;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.hoverText {
+    position: absolute;
+    visibility: hidden;
+    background: rgb(237,240,241);
+    width: 350px;
+}
+
+.HTTitle {
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 1px solid black;
+}
+
+.HTSplited {
+    display: flex;
+}
+
+.HTRight {
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.HTLeft {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.HTRight {
+    margin-left: 50px;
+}
+
+.HTLeft div, .HTRight div {
+    margin-top: 5px;
+}
+
+.days div:nth-child(1) {
+    margin-left: 0px;
+}
+
+.days div:nth-child(2) {
+    margin-left: 10px;
+}
+
+.days > div {
+    margin-left: 13px;
+}
+
+.days:nth-child(2) {
+    margin-top: 0;
+}
+
+.days {
+    margin-top: 5px;
+}
+
+.hodinyList {
+    width: 80%;
+    min-width: 1000px;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.HHL, .CHL, .THL, .UHL, .RHL {
+    width: 20%;
+    text-align: center;
+}
+
+.HHL div:nth-child(1), .CHL div:nth-child(1), .THL div:nth-child(1), .UHL div:nth-child(1), .RHL div:nth-child(1) {
+    border-top: 1px solid black;
+}
+
+.HHL div, .CHL div, .THL div, .UHL div, .RHL div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.HHL div {
+    border-left: 1px solid black;
+}
+
+.createHodina {
+    margin-top: 20px;
+    min-width: 1000px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.createHodina input, .createHodina select {
+    width: calc(100%/6 - (24px/6));
+}
+
+.submitHour {
+    width: 80%;
+    min-width: 1000px;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background: linear-gradient(to top, rgb(87,186,12), rgb(111,228,22));
+}
+
+.submitHour:hover {
+    background: linear-gradient(to top, rgb(57,156,42), rgb(81, 198, 52));
+}
+
+.submitHour p {
+    padding: 8px 0;
+}
+
+.submitHour:hover {
+    cursor: pointer;
+}
+
+.emptyHour {
+    width: 106px;
+}
+
+.RHL div:nth-child(1):hover {
+    cursor: default;
+}
+
+.RHL div:hover {
+    cursor: pointer;
+}
+
+.eventSelector {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.eventSelector div {
+    background-color: rgb(252,253,253);
+    padding: 15px;
+    font-size: larger;
+}
+
+.eventSelector div:hover {
+    background-color: rgb(202, 203, 203);
+}
+
+.zapsatZnamku {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.ZZV, .ZZT {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.ZZTable {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.ZZTable > div {
+    display: flex;
+}
+
+.ZZTable > div div:nth-child(1) {
+    width: 70%;
+    border-left: 1px solid black;
+}
+
+.ZZTable > div div:nth-child(2) {
+    width: 30%;
+}
+
+.ZZTable > div div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ZZTable > div div:nth-child(2) select {
+    width: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    border: 0;
+}
+
+.ZZTable {
+    border-top: 1px solid black;
+}
+
+.ZZButton, .ZHButton {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background: linear-gradient(to top, rgb(87,186,12), rgb(111,228,22));
+}
+
+.ZZButton:hover, .ZHButton:hover {
+    background: linear-gradient(to top, rgb(57,156,42), rgb(81, 198, 52));
+}
+
+.ZZButton p, .ZHButton p {
+    padding: 8px 0;
+}
+
+.ZZButton:hover, .ZHButton:hover {
+    cursor: pointer;
+}
+
+.zapsatHodinu {
+    margin-top: 50px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.ZHT {
+    height: 30px;
+    width: 100%;
+}
+
+.znamky {
+    margin-top: 50px;
+    width: 95%;
+    margin-left: 2.5%;
+    padding-bottom: 20px;
+}
+
+.znamky > div {
+    display: flex;
+    text-align: center;
+}
+
+.znamky > div div {
+    width: 7%;
+}   
+
+.znamky > div div:nth-child(1) {
+    width: 20%;
+}
+
+.znamky > div div:nth-child(12) {
+    width: 10%;
+    background-color: rgb(255,204,221);
+}
+
+.ZLine div:nth-child(1), .ZTop div:nth-child(1) {
+    border-left: 0;
+}
+
+
+.znamky div div {
+    border-left : 1px solid rgb(234,235,235);
+    border-bottom: 1px solid rgb(234,235,235);
+}
+
+.ZLine div p {
+    display: inline;
+}
+
+.ZLine div p:hover {
+    cursor: pointer;
+}
+
+.hodnoceni {
+    min-width: 1500px;
+    margin-top: 20px;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: rgb(252,253,253);
+    box-shadow: 0 0 10px rgb(232, 240, 242);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.HTop {
+    padding-top: 15px;
+    display: flex;
+    border-bottom: 1px solid rgb(232, 240, 242);
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.HTop img {
+    width: 50px;
+}
+
+.HTop p {
+    color: rgb(76, 84, 119);
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.zdroje {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+}
+
+.zdroje img {
+    width: 30px;
+    height: 30px;
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 0.3s;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(1deg);
+    }
+    75% {
+        transform: rotateZ(-1deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}

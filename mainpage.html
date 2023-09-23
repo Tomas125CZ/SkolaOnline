@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Škola online</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(rgb(192,224,239), rgb(233,240,236));
+            height: 100%;
+            min-height: 1000px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body onload="loadUserInfo(), loadHours(), loadZnamky()">
+    <div class="zdroje" onclick="openZdroje()">
+        <img src="images/zdroje.png" alt="">
+    </div>
+    <div class="hoverText">
+        <div class="HTTitle">Matematika</div>
+        <div class="HTSplited">
+            <div class="HTLeft">
+                <div>Učitel:</div>
+                <div>Třída:</div>
+                <div>Učebna:</div>
+                <div>Probrané učivo:</div>
+            </div>
+            <div class="HTRight">
+                <div>Bohata V.</div>
+                <div>1.Ai</div>
+                <div>070</div>
+                <div>Odevzdání projektu</div>
+            </div>
+        </div>
+    </div>
+    <div class="kalendar">
+        <div class="kTop">
+            <img src="images/kalendar.png" alt="">
+            <p>Kalendář</p>
+        </div>
+        <div class="kInfo">
+            <div class="kTrida"></div>
+            <div class="kZak"></div>
+            <div class="kTU"></div>
+        </div>
+        <div class="rozvrh">
+            <div class="hours">
+                <div class="empty"></div>
+                <div class="top"><p>0</p>07:05 - 07:50</div>
+                <div class="top"><p>1</p>07:55 - 08:40</div>
+                <div class="top"><p>2</p>08:45 - 09:30</div>
+                <div class="top"><p>3</p>09:50 - 10:35</div>
+                <div class="top"><p>4</p>10:40 - 11:25</div>
+                <div class="top"><p>5</p>11:30 - 12:15</div>
+                <div class="top"><p>6</p>12:20 - 13:05</div>
+                <div class="top"><p>7</p>13:10 - 13:55</div>
+                <div class="top"><p>8</p>14:00 - 14:45</div>
+                <div class="top"><p>9</p>14:50 - 15:35</div>
+                <div class="top"><p>10</p>15:40 - 16:25</div>
+                <div class="top"><p>11</p>16:30 - 17:15</div>
+                <div class="top"><p>12</p>17:20 - 18:05</div>
+            </div>
+            <div class="days">
+                <div class="left"><p>Po</p>29.5</div>
+                <div class="emptyHour" id="0H"></div>
+                <div class="emptyHour" id="1H"></div>
+                <div class="emptyHour" id="2H"></div>
+                <div class="emptyHour" id="3H"></div>
+                <div class="emptyHour" id="4H"></div>
+                <div class="emptyHour" id="5H"></div>
+                <div class="emptyHour" id="6H"></div>
+                <div class="emptyHour" id="7H"></div>
+                <div class="emptyHour" id="8H"></div>
+                <div class="emptyHour" id="9H"></div>
+                <div class="emptyHour" id="10H"></div>
+                <div class="emptyHour" id="11H"></div>
+                <div class="emptyHour" id="12H"></div>
+            </div>
+            <div class="days">
+                <div class="left"><p>Út</p>30.5</div>
+                <div class="emptyHour" id="13H"></div>
+                <div class="emptyHour" id="14H"></div>
+                <div class="emptyHour" id="15H"></div>
+                <div class="emptyHour" id="16H"></div>
+                <div class="emptyHour" id="17H"></div>
+                <div class="emptyHour" id="18H"></div>
+                <div class="emptyHour" id="19H"></div>
+                <div class="emptyHour" id="20H"></div>
+                <div class="emptyHour" id="21H"></div>
+                <div class="emptyHour" id="22H"></div>
+                <div class="emptyHour" id="23H"></div>
+                <div class="emptyHour" id="24H"></div>
+                <div class="emptyHour" id="25H"></div>
+            </div>
+            <div class="days">
+                <div class="left"><p>St</p>31.5</div>
+                <div class="emptyHour" id="26H"></div>
+                <div class="emptyHour" id="27H"></div>
+                <div class="emptyHour" id="28H"></div>
+                <div class="emptyHour" id="29H"></div>
+                <div class="emptyHour" id="30H"></div>
+                <div class="emptyHour" id="31H"></div>
+                <div class="emptyHour" id="32H"></div>
+                <div class="emptyHour" id="33H"></div>
+                <div class="emptyHour" id="34H"></div>
+                <div class="emptyHour" id="35H"></div>
+                <div class="emptyHour" id="36H"></div>
+                <div class="emptyHour" id="37H"></div>
+                <div class="emptyHour" id="38H"></div>
+            </div>
+            <div class="days">
+                <div class="left"><p>Čt</p>1.6</div>
+                <div class="emptyHour" id="39H"></div>
+                <div class="emptyHour" id="40H"></div>
+                <div class="emptyHour" id="41H"></div>
+                <div class="emptyHour" id="42H"></div>
+                <div class="emptyHour" id="43H"></div>
+                <div class="emptyHour" id="44H"></div>
+                <div class="emptyHour" id="45H"></div>
+                <div class="emptyHour" id="46H"></div>
+                <div class="emptyHour" id="47H"></div>
+                <div class="emptyHour" id="48H"></div>
+                <div class="emptyHour" id="49H"></div>
+                <div class="emptyHour" id="50H"></div>
+                <div class="emptyHour" id="51H"></div>
+            </div>
+            <div class="days">
+                <div class="left"><p>Pá</p>2.6</div>
+                <div class="emptyHour" id="52H"></div>
+                <div class="emptyHour" id="53H"></div>
+                <div class="emptyHour" id="54H"></div>
+                <div class="emptyHour" id="55H"></div>
+                <div class="emptyHour" id="56H"></div>
+                <div class="emptyHour" id="57H"></div>
+                <div class="emptyHour" id="58H"></div>
+                <div class="emptyHour" id="59H"></div>
+                <div class="emptyHour" id="60H"></div>
+                <div class="emptyHour" id="61H"></div>
+                <div class="emptyHour" id="62H"></div>
+                <div class="emptyHour" id="63H"></div>
+                <div class="emptyHour" id="64H"></div>
+            </div>
+        </div>
+    </div>
+    <div class="hodnoceni">
+        <div class="HTop">
+            <img src="images/znamky.png" alt="">
+            <p>Hodnocení</p>
+        </div>
+        <div class="znamky">
+            <div class="ZTop">
+                <div></div>
+                <div>0.1</div>
+                <div>0.2</div>
+                <div>0.3</div>
+                <div>0.4</div>
+                <div>0.5</div>
+                <div>0.6</div>
+                <div>0.7</div>
+                <div>0.8</div>
+                <div>0.9</div>
+                <div>1</div>
+                <div>Průměr</div>
+            </div>
+            <div class="ZLine">
+                <div>Tvorba webových stránek</div>
+                <div></div>
+                <div>1</div>
+                <div>2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
